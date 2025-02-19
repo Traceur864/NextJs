@@ -17,10 +17,12 @@ app.get("/", (req, res) => {
 const productosRoutes = require("./routes/productos.routes");
 const carritoRoutes = require("./routes/carrito.routes");
 const pedidosRoutes = require("./routes/pedidos.routes");
+const authRoutes = require("./routes/auth.routes");
 
 app.use("/productos", productosRoutes);
 app.use("/carrito", carritoRoutes);
 app.use("/pedidos", pedidosRoutes);
+app.use("/auth", authRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

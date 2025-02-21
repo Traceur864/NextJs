@@ -21,6 +21,7 @@ const storage = multer.diskStorage({
 // Obtener los productos del carrito de un usuario
 exports.obtenerCarrito = (req, res) => {
   const { usuario_id } = req.params;
+  console.log("Usuario ID recibido:", usuario_id);
   const query = `
     SELECT c.id, p.nombre, p.precio, c.cantidad, p.imagen 
     FROM carrito c
@@ -31,6 +32,7 @@ exports.obtenerCarrito = (req, res) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
+    console.log("Resultados de la consulta:", results);
     res.json(results);
   });
 };

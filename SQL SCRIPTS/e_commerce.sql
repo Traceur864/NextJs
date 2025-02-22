@@ -61,14 +61,21 @@ CREATE TABLE pedido_detalle (
 #DROP TABLE pedido_detalle;
 
 INSERT INTO usuarios (nombre, email, password) VALUES
-('Juan Pérez', 'juan@example.com', '123456'),
-('María López', 'maria@example.com', 'abcdef'),
-('Carlos Gómez', 'carlos@example.com', 'password123'),
-('Edwin', 'edwin@correo.com', '$2b$10$B5gptUy41R3sw29AQlb7C.fr5C5SX9ol6va2FYuEx0keiv019/xDS');
+('Juan Pérez', 'juan@correo.com', '$2b$10$B5gptUy41R3sw29AQlb7C.fr5C5SX9ol6va2FYuEx0keiv019/xDS'),
+('María López', 'maria@correo.com', '$2b$10$B5gptUy41R3sw29AQlb7C.fr5C5SX9ol6va2FYuEx0keiv019/xDS'),
+('Carlos Gómez', 'carlos@correo.com', '$2b$10$B5gptUy41R3sw29AQlb7C.fr5C5SX9ol6va2FYuEx0keiv019/xDS'),
+('Edwin Lopez', 'edwin@correo.com', '$2b$10$B5gptUy41R3sw29AQlb7C.fr5C5SX9ol6va2FYuEx0keiv019/xDS');
 
 INSERT INTO productos (nombre, descripcion, precio, imagen) VALUES
 ('Laptop Gamer', 'Laptop potente con procesador i7 y tarjeta gráfica RTX 3060.', 1500.00, 'laptop.jpg'),
 ('Teléfono Inteligente', 'Smartphone de última generación con cámara de 108MP.', 800.00, 'telefono.jpg'),
-('Auriculares Inalámbricos', 'Auriculares con cancelación de ruido y alta fidelidad de sonido.', 120.00, 'auriculares.jpg');
+('Auriculares Inalámbricos', 'Auriculares con cancelación de ruido y alta fidelidad de sonido.', 120.00, 'auriculares.jpg'),
+('Monitor 4K', 'Monitor UHD 4K de 27 pulgadas con tecnología IPS.', 350.00, 'monitor.jpg'),
+('Teclado Mecánico', 'Teclado mecánico RGB con switches personalizables.', 90.00, 'teclado.jpg'),
+('Mouse Gamer', 'Mouse ergonómico con sensor óptico de alta precisión.', 60.00, 'mouse.jpg'),
+('Silla Ergonómica', 'Silla de oficina ergonómica con soporte lumbar ajustable.', 250.00, 'silla.jpg'),
+('Tablet Android', 'Tablet con pantalla de 10 pulgadas y batería de larga duración.', 400.00, 'tablet.jpg'),
+('Smartwatch', 'Reloj inteligente con monitoreo de salud y GPS integrado.', 200.00, 'smartwatch.jpg'),
+('Cámara Profesional', 'Cámara réflex digital con lente de 24MP y grabación en 4K.', 1200.00, 'camara.jpg');
 
 #DROP DATABASE E_COMMERCE;

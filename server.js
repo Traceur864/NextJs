@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config();
-const db = require("./config/db");
 const path = require("path");
 
 const app = express();
@@ -24,6 +23,7 @@ app.use("/productos", productosRoutes);
 app.use("/carrito", carritoRoutes);
 app.use("/pedidos", pedidosRoutes);
 app.use("/auth", authRoutes);
+
 // Servir imágenes desde la carpeta 'public'
 app.use("/images", express.static(path.join(__dirname, "/uploads")));
 
